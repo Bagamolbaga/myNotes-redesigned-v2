@@ -1,2 +1,2 @@
-# myNotes-redesigned-v2
+# myNotes-newDesigned
 Created with CodeSandbox
