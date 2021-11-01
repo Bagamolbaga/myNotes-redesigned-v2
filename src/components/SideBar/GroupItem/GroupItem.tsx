@@ -26,13 +26,18 @@ const GroupItem: FC<GroupItemProps> = ({
 				className={`${s.groupsItem} + ${
 					showSideBar ? s.reverseTabOnlyIcon : s.reverseTabAllContent
 				}`}>
-				<div className={s.iconContainer}>
-					<i className="far fa-folder" style={iconStyle}></i>
+				<div className={s.iconAndLabelContainer}>
+					<div className={s.iconContainer}>
+						<i className="far fa-folder" style={iconStyle}></i>
+					</div>
+					<p>
+						{label}
+						<span className={s.groupsItemCount}>7</span>
+					</p>
 				</div>
-				<p>
-					{label}
-					<span className={s.groupsItemCount}>7</span>
-				</p>
+				<div className={s.iconContainer}>
+					<i className="far fa-trash-alt"></i>
+				</div>
 			</div>
 			{showPopUp && showSideBar && <p className={s.hoverAlt}>{label}</p>}
 		</div>

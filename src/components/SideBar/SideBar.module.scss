@@ -72,6 +72,24 @@
   margin: 15px 15px;
 }
 
+.groupItemsContainer {
+  max-height: 300px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color: #424242;
+    border-radius: 5px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #585858;
+    border-radius: 5px;
+  }
+}
+
 .groupsTitleContainer, .tagsTitleContainer {
   display: flex;
   align-items: center;
@@ -93,7 +111,23 @@
   }
 }
 
-
+.tagItemsContainer {
+  max-height: 220px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color: #424242;
+    border-radius: 5px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #585858;
+    border-radius: 5px;
+  }
+}
 
 
 
